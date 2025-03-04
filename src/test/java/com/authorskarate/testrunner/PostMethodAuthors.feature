@@ -46,21 +46,21 @@ Feature: API Tests for Creating Authors
     And request requestPayloads.invalidPayloadNamesAsInt
     When method POST
     Then status 400
-    * print response
-    And match response.id == null
-    And match response.firstName == null
+    * print response.id
+    * assert response.id == null
+    * assert response.firstName == null
 
   Scenario: Create author with extra fields
     Given path 'Authors'
     And request requestPayloads.payloadWithExtraFields
     When method POST
     Then status 200
-    And match response.extraField == null
+    * assert response.extraField == null
 
   Scenario: Create author with null fields
     Given path 'Authors'
     And request requestPayloads.payloadWithNullFields
     When method POST
     Then status 400
-    And match response.id == null
-    And match response.firstName == null
+    * assert response.id == null
+    * assert response.firstName == null
