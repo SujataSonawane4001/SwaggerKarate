@@ -1,0 +1,19 @@
+{
+  "validPayload": {
+    "id": 123,
+    "idBook": 789,
+    "firstName": "Chaitanya",
+    "lastName": "Purohit"
+  },
+  "emptyPayload": {},
+  "incompletePayload": {
+    "id": 123
+  },
+  "extraFieldsPayload": {
+    "id": 123,
+    "idBook": 789,
+    "firstName": "Chaitanya",
+    "lastName": "Purohit",
+    "extraField": "Unexpected Value"
+  }
+}

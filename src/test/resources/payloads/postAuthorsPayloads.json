@@ -1,0 +1,32 @@
+{
+  "validPayload": {
+    "id": 123,
+    "idBook": 789,
+    "firstName": "Chaitanya",
+    "lastName": "Purohit"
+  },
+  "payloadWithoutName": {
+    "id": 123,
+    "idBook": 789,
+    "firstName": "Chaitanya"
+  },
+  "invalidPayloadNamesAsInt": {
+    "id": 123,
+    "idBook": 789,
+    "firstName": 12345,
+    "lastName": 67890
+  },
+  "payloadWithExtraFields": {
+    "id": 123,
+    "idBook": 789,
+    "firstName": "Chaitanya",
+    "lastName": "Purohit",
+    "extraField": "Unexpected Value"
+  },
+  "payloadWithNullFields": {
+    "id": null,
+    "idBook": 789,
+    "firstName": null,
+    "lastName": null
+  }
+}
