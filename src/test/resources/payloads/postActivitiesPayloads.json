@@ -1,0 +1,29 @@
+{
+  "validPayload": {
+	  "id":123 ,
+	  "title": "sujataActivities",
+	  "completed": true
+  },
+  "payloadWithoutcompleted": {
+    "id": 123,
+    "title": "sujataActivities"
+    
+  },
+  "invalidPayloadTitleAsInt": {
+	       "id": 0,
+		  "title": 12345,
+		  "completed": true
+  },
+  "payloadWithExtraFields": {
+	   "id": 123,
+	  "title": "sujataActivities",
+	  "completed": true,
+    "extraField": "Unexpected Value"
+  },
+  "payloadWithNullFields": {
+	"id": null,
+	  "title": null,
+	  "completed": null
+    
+  }
+}
